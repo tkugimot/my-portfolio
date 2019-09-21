@@ -5,9 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #FDF6E3;
+  color: #3b3b3b;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+//最大フォントサイズ : 幅 860px 以下は 16px
+@media (min-width: 860px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+//最大フォントサイズ : 幅 860px ~ 1280px 以上は 24px
+@media (min-width: 860px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+//最大フォントサイズ : 幅 1280px 以上は 24px
+@media (min-width: 1280px) {
+  html {
+    font-size: 24px;
+  }
 }

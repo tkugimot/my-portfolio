@@ -1,6 +1,9 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 export const theme = createMuiTheme({
+    typography: {
+        "fontFamily": "\"Nato Sans JP\", \"Lato\", \"Roboto\", \"sans-serif\"",
+    },
     palette: {
         primary: {
             light: '#757ce8', // 基本の色よりも明るい色
