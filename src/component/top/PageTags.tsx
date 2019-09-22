@@ -3,15 +3,7 @@ import {AppBar, Box, Grid, makeStyles, Tab, Tabs, Typography, useTheme} from "@m
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {theme} from "../../app/Theme";
 import SwipeableViews from "react-swipeable-views";
-
-const useStyles = makeStyles({
-    socialIcon: {
-        padding: "0 10px"
-    },
-    pageTabs: {
-        margin: "20px 0px",
-    }
-});
+import About from "./inTab/About";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -19,6 +11,19 @@ interface TabPanelProps {
     index: any;
     value: any;
 }
+
+const useStyles = makeStyles({
+    socialIcon: {
+        padding: "0 10px"
+    },
+    pageTabs: {
+        margin: "20px 0px",
+    },
+    eachTab: {
+        width: "100%",
+        backgroundColor: '#fffbf0'
+    }
+});
 
 function TabPanel(props: TabPanelProps) {
     const { children, value, index, ...other } = props;
@@ -74,24 +79,26 @@ const PageTags: React.FC = () => {
                     <Tab label="Resume" {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
-            <SwipeableViews
-                axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                index={value}
-                onChangeIndex={handleChangeIndex}
-            >
-                <TabPanel value={value} index={0} dir={theme.direction}>
-                    Item One
-                </TabPanel>
-                <TabPanel value={value} index={1} dir={theme.direction}>
-                    Item Two
-                </TabPanel>
-                <TabPanel value={value} index={2} dir={theme.direction}>
-                    Item Three
-                </TabPanel>
-                <TabPanel value={value} index={3} dir={theme.direction}>
-                    Item Four
-                </TabPanel>
-            </SwipeableViews>
+            <div className={classes.eachTab}>
+                <SwipeableViews
+                    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+                    index={value}
+                    onChangeIndex={handleChangeIndex}
+                >
+                    <TabPanel value={value} index={0} dir={theme.direction}>
+                        <About />
+                    </TabPanel>
+                    <TabPanel value={value} index={1} dir={theme.direction}>
+                        Item Two
+                    </TabPanel>
+                    <TabPanel value={value} index={2} dir={theme.direction}>
+                        Item Three
+                    </TabPanel>
+                    <TabPanel value={value} index={3} dir={theme.direction}>
+                        Item Four
+                    </TabPanel>
+                </SwipeableViews>
+            </div>
         </Grid>
     );
 };

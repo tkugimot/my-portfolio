@@ -12,9 +12,9 @@ export const theme = createMuiTheme({
             contrastText: '#fff', // テキストの色
         },
         secondary: {
-            light: '#ff7961',
-            main: '#f44336',
-            dark: '#ba000d',
+            light: '#ffb74d',
+            main: '#fb8c00',
+            dark: '#e65100',
             contrastText: '#000',
         },
     },

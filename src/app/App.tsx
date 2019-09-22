@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import store from "./store";
 import {MuiThemeProvider} from '@material-ui/core/styles';
 import {theme} from './Theme'
-import About from "../component/About";
+import About from "../component/top/inTab/About";
 import Top from "../component/top/Top";
 import Header from "../component/Header";
 import GlobalStyle from "../globalStyle";
