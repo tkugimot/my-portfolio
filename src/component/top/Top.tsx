@@ -2,6 +2,7 @@ import React from 'react';
 import {Grid, makeStyles, Typography} from "@material-ui/core";
 import ProfileImage from "./ProfileImage";
 import SocialLinks from "./SocialLinks";
+import PageTags from "./PageTags";
 
 const useStyles = makeStyles({
     helloWorld: {
@@ -43,6 +44,9 @@ const Top: React.FC = () => {
           </Grid>
           <Grid item xs={12} container justify="center" alignItems="center">
               <SocialLinks />
+          </Grid>
+          <Grid item xs={12} container justify="center" alignItems="center">
+              <PageTags />
           </Grid>
       </Grid>
     )
