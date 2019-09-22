@@ -1,5 +1,5 @@
 import React from 'react';
-import {Avatar, Container, Grid, makeStyles} from "@material-ui/core";
+import {Avatar, Grid, makeStyles} from "@material-ui/core";
 import profileImage from '../../static/images/toshi.jpg';
 
 const useStyles = makeStyles({
