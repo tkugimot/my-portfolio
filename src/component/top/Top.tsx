@@ -18,7 +18,6 @@ const useStyles = makeStyles({
         textAlign: "center",
         fontWeight: 900,
         margin: "20px 0px",
-        color: '#141414',
     },
     socialLinks: {
         marginTop: "50px"

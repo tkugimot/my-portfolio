@@ -4,8 +4,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const useStyles = makeStyles({
     socialIcon: {
-        padding: "10px 10px",
-        margin: "30px 0px",
+        padding: "10px 15px",
+        margin: "50px 0px",
     },
 });
 
