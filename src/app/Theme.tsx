@@ -2,13 +2,13 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 export const theme = createMuiTheme({
     typography: {
-        "fontFamily": "\"Nato Sans JP\", \"Lato\", \"Roboto\", \"sans-serif\"",
+        "fontFamily": "\"Ubuntu\", \"Lato\", \"Roboto\", \"sans-serif\"",
     },
     palette: {
         primary: {
-            light: '#757ce8', // 基本の色よりも明るい色
-            main: '#3f50b5', // 基本の色
-            dark: '#002884', // 基本の色よりも暗い色
+            light: '#a1887f', // 基本の色よりも明るい色
+            main: '#6d4c41', // 基本の色
+            dark: '#3e2723', // 基本の色よりも暗い色
             contrastText: '#fff', // テキストの色
         },
         secondary: {

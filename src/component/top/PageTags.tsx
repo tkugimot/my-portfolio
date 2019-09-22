@@ -8,6 +8,9 @@ const useStyles = makeStyles({
     socialIcon: {
         padding: "0 10px"
     },
+    pageTabs: {
+        margin: "20px 0px",
+    }
 });
 
 interface TabPanelProps {
@@ -55,7 +58,7 @@ const PageTags: React.FC = () => {
     }
 
     return (
-        <Grid item xs={12} container justify="center" alignItems="center">
+        <Grid item xs={12} container justify="center" alignItems="center" className={classes.pageTabs}>
             <AppBar position="static" color="default">
                 <Tabs
                     value={value}
@@ -65,9 +68,10 @@ const PageTags: React.FC = () => {
                     variant="fullWidth"
                     aria-label="full width tabs example"
                 >
-                    <Tab label="Item One" {...a11yProps(0)} />
-                    <Tab label="Item Two" {...a11yProps(1)} />
-                    <Tab label="Item Three" {...a11yProps(2)} />
+                    <Tab label="About" {...a11yProps(0)} />
+                    <Tab label="Work" {...a11yProps(1)} />
+                    <Tab label="Education" {...a11yProps(2)} />
+                    <Tab label="Resume" {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
             <SwipeableViews
@@ -83,6 +87,9 @@ const PageTags: React.FC = () => {
                 </TabPanel>
                 <TabPanel value={value} index={2} dir={theme.direction}>
                     Item Three
+                </TabPanel>
+                <TabPanel value={value} index={3} dir={theme.direction}>
+                    Item Four
                 </TabPanel>
             </SwipeableViews>
         </Grid>

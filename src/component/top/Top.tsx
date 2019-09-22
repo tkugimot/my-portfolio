@@ -8,6 +8,7 @@ const useStyles = makeStyles({
     helloWorld: {
         width: "100%",
         textAlign: "center",
+        margin: "20px 0",
     },
     typography: {
         width: "100%",
@@ -19,7 +20,8 @@ const useStyles = makeStyles({
         margin: "20px 0px",
         color: '#141414',
     },
-    grid: {
+    socialLinks: {
+        marginTop: "50px"
     }
 });
 
@@ -27,10 +29,8 @@ const Top: React.FC = () => {
     const classes = useStyles();
 
     return (
-      <Grid container justify="center" spacing={5}>
-          <Grid item xs={12} className={classes.grid}>
-              <ProfileImage />
-          </Grid>
+      <Grid container justify="center">
+          <ProfileImage />
           <Grid item xs={12} container justify="center" alignItems="center">
               <Typography variant="h4" component="h4" className={classes.helloWorld} gutterBottom>
                   Hello World :)
@@ -42,12 +42,8 @@ const Top: React.FC = () => {
                   Software Engineer.
               </Typography>
           </Grid>
-          <Grid item xs={12} container justify="center" alignItems="center">
-              <SocialLinks />
-          </Grid>
-          <Grid item xs={12} container justify="center" alignItems="center">
-              <PageTags />
-          </Grid>
+          <SocialLinks />
+          <PageTags />
       </Grid>
     )
 };
