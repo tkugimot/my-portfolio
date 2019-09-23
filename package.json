@@ -28,13 +28,17 @@
     "typescript": "^3.6.3",
     "styled-components": "^4.3.2",
     "react-swipeable-views": "^0.13.3",
-    "react-circle": "^1.1.1"
+    "react-circle": "^1.1.1",
+    "gh-pages": "^2.1.1"
   },
+  "homepage": "https://tkugimot.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

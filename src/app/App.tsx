@@ -12,6 +12,7 @@ import GlobalStyle from "../globalStyle";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import Footer from "../component/Footer";
 
 library.add(fas, fab);
 
@@ -25,6 +26,7 @@ const App: React.FC = () => {
                     <Header />
                     <Route exact path="/" component={Top} />
                     <Route path="/about" component={About} />
+                    <Footer />
                 </div>
             </Router>
         </Provider>
