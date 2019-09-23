@@ -31,7 +31,7 @@
     "react-circle": "^1.1.1",
     "gh-pages": "^2.1.1"
   },
-  "homepage": "https://tkugimot.github.io/portfolio",
+  "homepage": "https://tkugimot.github.io/my-portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
