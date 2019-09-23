@@ -21,7 +21,7 @@ const App: React.FC = () => {
       <MuiThemeProvider theme={theme}>
         <Provider store={store}>
             <GlobalStyle />
-            <Router>
+            <Router basename="/my-portfolio">
                 <div>
                     <Header />
                     <Route exact path="/" component={Top} />
