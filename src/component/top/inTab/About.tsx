@@ -8,6 +8,8 @@ const useStyles = makeStyles({
   title: {
     padding: "24px"
   },
+  body: {
+  },
   eachContent: {
     marginBottom: '16px',
     padding: '10px',
@@ -34,7 +36,7 @@ const About: React.FC = () => {
             Get to know me.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6} container className={classes.profile}>
+        <Grid item xs={12} container className={classes.profile}>
           <Grid item xs={12} container justify="center"  >
             <Typography variant="h5" component="h5" gutterBottom color="primary" className={classes.title}>
               My Profile
@@ -42,7 +44,7 @@ const About: React.FC = () => {
           </Grid>
 
           <Grid item xs={12} container justify="center" className={classes.eachContent} >
-            <Typography variant="body1" gutterBottom>
+            <Typography variant="body1" gutterBottom className={classes.body}>
               I am a software engineer, web developer and a problem solver.
               I am always trying to improve people's lives, and looking for what makes the world a better place.
               Other than work, I love playing baseball, watching dramas/movies and spending time with my family/friends.
@@ -87,7 +89,7 @@ const About: React.FC = () => {
             </List>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={6} container className={classes.skill}>
+        <Grid item xs={12} container className={classes.skill}>
           <Grid item xs={12} container justify="center" >
             <Typography variant="h5" component="h5" gutterBottom color="primary" className={classes.title}>
               Skill
@@ -110,81 +112,96 @@ const About: React.FC = () => {
               </Typography>
             </Grid>
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={80}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary">
-                Java
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={80}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  Java
+                </Typography>
+              </Grid>
             </Grid>
 
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={60}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary">
-                Python
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={60}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  Python
+                </Typography>
+              </Grid>
             </Grid>
 
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={40}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary">
-                TypeScript
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={40}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  TypeScript
+                </Typography>
+              </Grid>
             </Grid>
 
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={30}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary">
-                Rust
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={30}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  Rust
+                </Typography>
+              </Grid>
             </Grid>
-
 
             <Grid item xs={12} container justify="center" >
               <Typography variant="h5" component="h5" gutterBottom color="primary" className={classes.title}>
@@ -193,83 +210,97 @@ const About: React.FC = () => {
             </Grid>
 
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={80}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary">
-                Spring Boot
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={80}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  Spring Boot
+                </Typography>
+              </Grid>
             </Grid>
-
 
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={60}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary">
-                Ruby on Rails
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={60}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  Ruby on Rails
+                </Typography>
+              </Grid>
             </Grid>
-
 
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={30}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary">
-                React, Redux
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={50}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  React, Redux
+                </Typography>
+              </Grid>
             </Grid>
-
 
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={30}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary">
-                Flask
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={50}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  Flask
+                </Typography>
+              </Grid>
             </Grid>
+
 
             <Grid item xs={12} container justify="center" >
               <Typography variant="h5" component="h5" gutterBottom color="primary" className={classes.title}>
@@ -278,47 +309,56 @@ const About: React.FC = () => {
             </Grid>
 
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={60}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary">
-                Chef
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={60}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  Chef
+                </Typography>
+              </Grid>
             </Grid>
 
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
-              <Circle
-                  progress={50}
-                  animate={true} // Boolean: Animated/Static progress
-                  animationDuration="1s" // String: Length of animation
-                  responsive={false} // Boolean: Make SVG adapt to parent size
-                  size="100" // String: Defines the size of the circle.
-                  lineWidth="25" // String: Defines the thickness of the circle's stroke.
-                  progressColor="Maroon" // String: Color of "progress" portion of circle.
-                  bgColor="Moccasin" // String: Color of "empty" portion of circle.
-                  textColor="Maroon" // String: Color of percentage text color.
-                  showPercentage={true} // Boolean: Show/hide percentage.
-                  showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-              />
-              <Typography variant="subtitle2" gutterBottom color="secondary" className={classes.title}>
-                Docker, k8s
-              </Typography>
+              <Grid item xs={12} container justify="center" >
+                <Circle
+                    progress={50}
+                    animate={true} // Boolean: Animated/Static progress
+                    animationDuration="1s" // String: Length of animation
+                    responsive={false} // Boolean: Make SVG adapt to parent size
+                    size="100" // String: Defines the size of the circle.
+                    lineWidth="25" // String: Defines the thickness of the circle's stroke.
+                    progressColor="Maroon" // String: Color of "progress" portion of circle.
+                    bgColor="Moccasin" // String: Color of "empty" portion of circle.
+                    textColor="Maroon" // String: Color of percentage text color.
+                    showPercentage={true} // Boolean: Show/hide percentage.
+                    showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
+                />
+              </Grid>
+              <Grid item xs={12} container justify="center"  >
+                <Typography variant="subtitle2" gutterBottom color="secondary">
+                  Docker, k8s
+                </Typography>
+              </Grid>
             </Grid>
 
             ...etc
           </Grid>
+        </Grid>
 
-
+        <Grid item xs={12} container className={classes.skill}>
           <Grid item xs={12} container justify="center">
             <Typography variant="h5" component="h5" gutterBottom color="primary" className={classes.title}>
               License
