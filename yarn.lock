@@ -7760,6 +7760,10 @@ react-app-polyfill@^1.0.3:
     regenerator-runtime "0.13.3"
     whatwg-fetch "3.0.0"
 
+react-circle@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-circle/-/react-circle-1.1.1.tgz#f97ccf3e2a37a91ea50280ea8262420e0d1de60c"
+
 react-dev-utils@^9.0.4:
   version "9.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-9.0.4.tgz#5c71a8e8afdec0232c44d4e049d21baa437a92af"

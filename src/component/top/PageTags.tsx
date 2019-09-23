@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {AppBar, Box, Grid, makeStyles, Tab, Tabs, Typography, useTheme} from "@material-ui/core";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {theme} from "../../app/Theme";
 import SwipeableViews from "react-swipeable-views";
 import About from "./inTab/About";
+import Work from "./inTab/Work";
+import Education from "./inTab/Education";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -18,6 +18,9 @@ const useStyles = makeStyles({
     },
     pageTabs: {
         margin: "20px 0px",
+    },
+    header: {
+        backgroundColor: "white",
     },
     eachTab: {
         width: "100%",
@@ -63,8 +66,8 @@ const PageTags: React.FC = () => {
     }
 
     return (
-        <Grid item xs={12} container justify="center" alignItems="center" className={classes.pageTabs}>
-            <AppBar position="static" color="default">
+        <Grid item xs={12} container justify="center" className={classes.pageTabs}>
+            <AppBar position="static" color="default" className={classes.header}>
                 <Tabs
                     value={value}
                     onChange={handleChange}
@@ -76,7 +79,7 @@ const PageTags: React.FC = () => {
                     <Tab label="About" {...a11yProps(0)} />
                     <Tab label="Work" {...a11yProps(1)} />
                     <Tab label="Education" {...a11yProps(2)} />
-                    <Tab label="Resume" {...a11yProps(3)} />
+                    {/*<Tab label="Resume" {...a11yProps(3)} />*/}
                 </Tabs>
             </AppBar>
             <div className={classes.eachTab}>
@@ -89,14 +92,14 @@ const PageTags: React.FC = () => {
                         <About />
                     </TabPanel>
                     <TabPanel value={value} index={1} dir={theme.direction}>
-                        Item Two
+                        <Work />
                     </TabPanel>
                     <TabPanel value={value} index={2} dir={theme.direction}>
-                        Item Three
+                        <Education />
                     </TabPanel>
-                    <TabPanel value={value} index={3} dir={theme.direction}>
-                        Item Four
-                    </TabPanel>
+                    {/*<TabPanel value={value} index={3} dir={theme.direction}>*/}
+                    {/*    Item Four*/}
+                    {/*</TabPanel>*/}
                 </SwipeableViews>
             </div>
         </Grid>
