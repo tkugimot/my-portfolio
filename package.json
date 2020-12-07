@@ -17,7 +17,7 @@
     "@types/react-fontawesome": "^1.6.4",
     "@types/react-swipeable-views": "^0.13.0",
     "eslint": "^6.4.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
