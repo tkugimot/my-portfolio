@@ -73,7 +73,7 @@ const About: React.FC = () => {
               </ListItem>
               <ListItem>
                 <ListItemText
-                    primary="Current Workplace: PayPay Corporation (Yahoo! Japan)"
+                    primary="Current Workplace: Yahoo! Japan"
                 />
               </ListItem>
               <ListItem>
@@ -160,7 +160,7 @@ const About: React.FC = () => {
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
               <Grid item xs={12} container justify="center" >
                 <Circle
-                    progress={40}
+                    progress={20}
                     animate={true} // Boolean: Animated/Static progress
                     animationDuration="1s" // String: Length of animation
                     responsive={false} // Boolean: Make SVG adapt to parent size
@@ -183,7 +183,7 @@ const About: React.FC = () => {
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
               <Grid item xs={12} container justify="center" >
                 <Circle
-                    progress={30}
+                    progress={20}
                     animate={true} // Boolean: Animated/Static progress
                     animationDuration="1s" // String: Length of animation
                     responsive={false} // Boolean: Make SVG adapt to parent size
@@ -258,7 +258,7 @@ const About: React.FC = () => {
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
               <Grid item xs={12} container justify="center" >
                 <Circle
-                    progress={50}
+                    progress={30}
                     animate={true} // Boolean: Animated/Static progress
                     animationDuration="1s" // String: Length of animation
                     responsive={false} // Boolean: Make SVG adapt to parent size
@@ -311,7 +311,7 @@ const About: React.FC = () => {
             <Grid item xs={6} container justify="center" className={classes.eachContent} >
               <Grid item xs={12} container justify="center" >
                 <Circle
-                    progress={60}
+                    progress={80}
                     animate={true} // Boolean: Animated/Static progress
                     animationDuration="1s" // String: Length of animation
                     responsive={false} // Boolean: Make SVG adapt to parent size

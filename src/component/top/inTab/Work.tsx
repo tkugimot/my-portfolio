@@ -34,7 +34,7 @@ const useStyles = makeStyles({
 });
 
 function getSteps() {
-  return ['Web Developer at Yahoo! Japan', 'Web Developer at PayPay Corporation'];
+  return ['Web Developer at Yahoo! Japan', 'Web Developer at PayPay Corporation', 'Web Developer at Yahoo! Japan'];
 }
 
 function getStepContent(step: number) {
@@ -44,8 +44,10 @@ function getStepContent(step: number) {
 Settlement-related information by using Spring Boot framework, Build feature to show PayPay balance in Yahoo Wallet, etc.`;
     case 1:
       return 'Build KYC(Know Your Customer), Payment/Payout management, Bank master for payment/payout features, etc.';
+    case 2:
+      return 'Designed and developed both back-end and front-end systems for the new Yahoo! Wallet to replace old low-maintainability systems with high-serviceability and high-performance (up to 5000 requests per second maximum) systems.';
     default:
-      return 'Unknown step';
+      return 'Default sentence.';
   }
 }
 
